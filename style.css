@@ -1,4 +1,13 @@
+body{
+    max-width: 15%;
+    margin: auto;
+}
+
 label{
     display: block;
     margin-top: 10px;
+}
+
+.Borda-erro{
+    border-color: #ff0000;
 }
