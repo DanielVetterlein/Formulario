@@ -23,7 +23,7 @@ fieldset{
     box-sizing: border-box;
 }
 
-.radio-grupo{
+.caixas-ajustaveis{
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
