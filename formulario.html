@@ -18,27 +18,88 @@
                 maxlength="50"
                 required>
         </div>
+
+        <div>
+            <label for="data">Selecione a data do seu nascimento</label>
+            <input type="date" id="data" name="data">
+        </div>
+
+        <div>
+            <label for="idade">Idade</label>
+            <input type="number" id="idade" name="idade" placeholder="Selecionar idade" min="0" max="150">
+        </div>
+
         <div>
             <label for="email">Email</label>
             <input type="email" id="email" name="email" placeholder="exemplo@gmail.com" maxlength="50" required>
         </div>
+
         <div>
             <label for="senha">Senha</label>
             <input type="password" id="senha" name="senha" placeholder="8 caracteres no mínimo" maxlength="20" minlength="8" required>
         </div>
+
         <div>
             <label for="confirmar-senha">Confirmar senha</label>
             <input type="password" id="confirmar-senha" name="confirmar-senha" placeholder="Digite a mesma senha" maxlength="20" minlength="8" required>
         </div>
 
         <div>
+            <label for="genero">Selecione o seu gênero</label>
+
+            <fieldset>   
+                <label for="masculino">
+                    <input type="radio" id="masculino" name="genero">
+                    Masculino
+                </label>
+
+                <label for="feminino">
+                    <input type="radio" id="feminino" name="genero">
+                    Feminino
+                </label>
+            </fieldset>
+        </div>
+
+        <div>
+            <label for="questionario-idiomas">Selecione os idiomas que você tem fluência</label>
+            <fieldset>
+                <input type="checkbox" name="questionario-idiomas" id="portugues">
+                Português
+                <input type="checkbox" name="questionario-idiomas" id="ingles">
+                Inglês
+                <input type="checkbox" name="questionario-idiomas" id="espanhol">
+                Espanhol
+                <input type="checkbox" name="questionario-idiomas" id="alemao">
+                Alemão
+                <input type="checkbox" name="questionario-idiomas" id="outros">
+                Outros
+            </fieldset>
+        </div>
+
+        <div>
+            <label for="regiao">Selecione a região em que você reside</label>
+            <select name="regiao" id="selecionar-regiao">
+                <option value="sul">Sul</option>
+                <option value="sudeste">Sudeste</option>
+                <option value="centro-oeste">Centro-Oeste</option>
+                <option value="nordeste">Nordeste</option>
+                <option value="norte">Norte</option>
+            </select>
+        </div>
+
+        
+
+        <div>
             <button name="botao-enviar" type="submit" onclick="enviarForm()">Enviar</button>
         </div>
+
+        
     </form>
 
     <script>
         function enviarForm(){
             let nome = document.getElementById('nome').value;
+            let data = document.getElementById('data').value;
             let email = document.getElementById('email').value;
             let senha = document.getElementById('senha').value;
             let senhaConfirmada = document.getElementById('confirmar-senha').value;

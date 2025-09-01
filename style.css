@@ -1,11 +1,33 @@
 body{
-    max-width: 15%;
-    margin: auto;
+    max-width: 25%;
+    margin: auto;  
+}
+
+form{
+    border: solid;
+    border-radius: 5%;
+    padding: 5%;
 }
 
 label{
     display: block;
     margin-top: 10px;
+}
+
+fieldset{
+    display: inline;
+}
+
+fieldset label{
+    margin-top: 5px;
+}
+
+button[name="botao-enviar"]{
+    display: block;
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: rgb(29, 118, 202);
+    color: white;
 }
 
 .Borda-erro{
