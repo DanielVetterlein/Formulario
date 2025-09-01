@@ -3,8 +3,12 @@ body{
     margin: auto;  
 }
 
+h2{
+    text-align: center;
+}
+
 form{
-    border: solid;
+    border: solid 1px;
     border-radius: 5%;
     padding: 5%;
 }
@@ -15,20 +19,35 @@ label{
 }
 
 fieldset{
-    display: inline;
+    width: 100%;
+    box-sizing: border-box;
 }
 
+.radio-grupo{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: auto;
+}
 fieldset label{
     margin-top: 5px;
+    margin: auto;
 }
 
 button[name="botao-enviar"]{
     display: block;
-    margin-top: 10px;
+    margin: 10px auto;
     padding: 5px 10px;
     background-color: rgb(29, 118, 202);
     color: white;
 }
+
+
+.input-tamanho-total{
+    width: 100%;
+    box-sizing: border-box;
+}
+
 
 .Borda-erro{
     border-color: #ff0000;
